@@ -7,17 +7,9 @@ function Header() {
 
 	return (
 		<div className={styles.wrapper}>
-			<h1>Memory Game</h1>
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.tsx</code> and save to test HMR
-				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
+			<h1 className={styles.title}>Memory Game</h1>
+			<p className={styles.description}>
+				Earn points by clicking on a card, but don't pick the same one twice!
 			</p>
 		</div>
 	);
