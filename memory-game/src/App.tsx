@@ -1,8 +1,8 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import Header from "./Header";
-import MemoryGame from "./MemoryGame";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import MemoryGame from "./logic/MemoryGame";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {

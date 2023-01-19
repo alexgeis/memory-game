@@ -1,8 +1,8 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import githubLogo from "./assets/icons/footer/github-mark.svg";
-import linkedInLogo from "./assets/icons/footer/linkedin-round-icon.svg";
-import spotifyLogo from "./assets/icons/footer/spotify-icon.svg";
+import githubLogo from "../assets/icons/footer/github-mark.svg";
+import linkedInLogo from "../assets/icons/footer/linkedin-round-icon.svg";
+import spotifyLogo from "../assets/icons/footer/spotify-icon.svg";
 import styles from "./Footer.module.css";
 
 function Footer() {
