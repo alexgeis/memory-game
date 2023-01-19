@@ -61,6 +61,17 @@ function MemoryGame() {
 		setDogs(shuffle(dogs));
 	};
 
+	// PSEUDO FOR NEXT STEPS
+	/* 
+		1. add points each time a unique card is selected
+		2. upon endGame(), reset score and text
+			2.1 need mechanism to restart game - either a button or a countdown
+		3. Best score display: showing highest score reached (save in local storage?)
+		
+		~optional~	
+		1. Leaderboard?
+	*/
+
 	const endGame = (): void => {
 		const el: HTMLElement = document.querySelector("#gameStatus")!;
 		el.style.display = "block";
