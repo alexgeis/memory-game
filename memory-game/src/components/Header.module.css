@@ -15,3 +15,7 @@
 .description {
 	font-size: 1rem;
 }
+
+.gameStatus {
+	display: none;
+}

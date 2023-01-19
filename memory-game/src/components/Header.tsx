@@ -11,6 +11,12 @@ function Header() {
 			<p className={styles.description}>
 				Earn points by clicking on a card, but don't pick the same one twice!
 			</p>
+			<p
+				className={styles.gameStatus}
+				id="gameStatus"
+			>
+				YOU LOSE!!!
+			</p>
 		</div>
 	);
 }

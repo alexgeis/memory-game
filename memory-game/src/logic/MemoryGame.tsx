@@ -20,7 +20,7 @@ type Dog = {
 };
 
 function MemoryGame() {
-	const dogs: Dog[] = [
+	const dogData: Dog[] = [
 		{ id: 1, photo: dogPhoto1 },
 		{ id: 2, photo: dogPhoto2 },
 		{ id: 3, photo: dogPhoto3 },
@@ -46,18 +46,38 @@ function MemoryGame() {
 		return array;
 	};
 
-	const shuffledDogs: Dog[] = shuffle(dogs);
+	const shuffledDogs: Dog[] = shuffle(dogData);
+
+	const [dogs, setDogs] = useState<Dog[]>(shuffledDogs);
+	const [clickedDogIds, setClickedDogIds] = useState<number[]>([]);
+
+	// event "React.MouseEvent<HTMLElement>" is throwing an error for unknown property dataset
+	const clickHandler = (e: any): void => {
+		const id: number = +e.target.dataset.id;
+		if (clickedDogIds.includes(id)) {
+			endGame();
+		}
+		setClickedDogIds([...clickedDogIds, id]);
+		setDogs(shuffle(dogs));
+	};
+
+	const endGame = (): void => {
+		const el: HTMLElement = document.querySelector("#gameStatus")!;
+		el.style.display = "block";
+	};
 
 	return (
 		<div className={styles.wrapper}>
-			{shuffledDogs.map((dog: Dog) => {
+			{dogs.map((dog: Dog) => {
 				return (
 					<div
 						className={styles.card}
 						key={dog.id}
+						onClick={clickHandler}
 					>
 						<span className={styles.cardImgWrap}>
 							<img
+								data-id={dog.id}
 								src={dog.photo}
 								alt="dog photo"
 							/>
