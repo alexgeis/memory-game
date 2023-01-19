@@ -11,6 +11,8 @@ import dogPhoto7 from "./assets/images/mutt.jpg";
 import dogPhoto8 from "./assets/images/pom.jpg";
 import dogPhoto9 from "./assets/images/shiba.jpg";
 import dogPhoto10 from "./assets/images/shiba-hat.jpg";
+import dogPhoto11 from "./assets/images/bandana.jpg";
+import dogPhoto12 from "./assets/images/stick-boi.jpg";
 
 function MemoryGame() {
 	return (
@@ -91,6 +93,22 @@ function MemoryGame() {
 				<span className={styles.cardImgWrap}>
 					<img
 						src={dogPhoto10}
+						alt="dog photo"
+					/>
+				</span>
+			</div>
+			<div className={styles.card}>
+				<span className={styles.cardImgWrap}>
+					<img
+						src={dogPhoto11}
+						alt="dog photo"
+					/>
+				</span>
+			</div>
+			<div className={styles.card}>
+				<span className={styles.cardImgWrap}>
+					<img
+						src={dogPhoto12}
 						alt="dog photo"
 					/>
 				</span>
