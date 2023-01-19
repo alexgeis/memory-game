@@ -1,3 +1,37 @@
 .wrapper {
-	background-color: aliceblue;
+	/* background-color: aliceblue; */
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	border-radius: 15px;
 }
+
+.card {
+	border-radius: 15px;
+}
+.card:hover {
+	border: 1px solid #e6e6e6;
+}
+.card:focus,
+.card:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+.cardImgWrap {
+	display: flex;
+	justify-content: center;
+}
+
+.cardImgWrap img {
+	border-radius: 15px;
+	background-size: contain;
+	width: 170px;
+	height: 240px;
+}
+/* button:hover {
+	border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+} */
