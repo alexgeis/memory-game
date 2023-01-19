@@ -8,9 +8,10 @@
 
 .card {
 	border-radius: 15px;
+	border: 2px solid transparent;
 }
 .card:hover {
-	border: 1px solid #e6e6e6;
+	border: 2px solid #e6e6e6;
 }
 .card:focus,
 .card:focus-visible {
