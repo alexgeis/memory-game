@@ -1,13 +1,15 @@
 import { useState, Suspense, lazy } from "react";
-import reactLogo from "./assets/react.svg";
-import Header from "./components/Header";
-const MemoryGame = lazy(() => delayForDemo(import("./logic/MemoryGame")));
 
-function delayForDemo(promise: any) {
-	return new Promise((resolve) => {
-		setTimeout(resolve, 2000);
-	}).then(() => promise);
-}
+import Header from "./components/Header";
+const MemoryGame = lazy(() => import("./logic/MemoryGame"));
+
+// manually delay for demo
+// const MemoryGame = lazy(() => delayForDemo(import("./logic/MemoryGame")));
+// function delayForDemo(promise: any) {
+// 	return new Promise((resolve) => {
+// 		setTimeout(resolve, 2000);
+// 	}).then(() => promise);
+// }
 
 import Footer from "./components/Footer";
 import Loading from "./components/Loading";
