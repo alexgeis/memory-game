@@ -1,5 +1,3 @@
-Search and replace keywords: `deployed_link`, `product-screenshot`, `memory-game`, `Memory Card Game`, `project_description`
-
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
@@ -33,7 +31,7 @@ Search and replace keywords: `deployed_link`, `product-screenshot`, `memory-game
     <a href="https://github.com/alexgeis/memory-game"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a class="deployed_link" href="https://github.com/alexgeis/memory-game">View Demo</a>
+    <a class="deployed_link" href="memory-card-game-dawgs.netlify.app">View Demo</a>
     ·
     <a href="https://github.com/alexgeis/memory-game/issues">Report Bug</a>
     ·
@@ -72,7 +70,7 @@ Search and replace keywords: `deployed_link`, `product-screenshot`, `memory-game
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-<a class="deployed_link" href="https://example.com">
+<a class="deployed_link" href="memory-card-game-dawgs.netlify.app">
 <p align="center">
 <img id="product-screenshot" src="src/assets/images/app_screenshot.png" alt="Memory Game app screenshot"
 style="display: block;
@@ -233,7 +231,7 @@ Project Link: [https://github.com/alexgeis/memory-game](https://github.com/alexg
 
 Helpful resources and kudos.
 
-- [Choose an Open Source License](https://choosealicense.com)
+- [Netlify](https://www.netlify.com/)
 <!-- - [Choose an Open Source License](https://choosealicense.com)
 - [Img Shields](https://shields.io)
 - [GitHub Pages](https://pages.github.com)
