@@ -1,15 +1,15 @@
-import dogPhoto1 from "../assets/images/beauceron.jpg";
-import dogPhoto2 from "../assets/images/bull-terrier.jpg";
-import dogPhoto3 from "../assets/images/collie.jpg";
-import dogPhoto4 from "../assets/images/dachshund.jpg";
-import dogPhoto5 from "../assets/images/golden.jpg";
-import dogPhoto6 from "../assets/images/husky.jpg";
-import dogPhoto7 from "../assets/images/mutt.jpg";
-import dogPhoto8 from "../assets/images/pom.jpg";
-import dogPhoto9 from "../assets/images/shiba.jpg";
-import dogPhoto10 from "../assets/images/shiba-hat.jpg";
-import dogPhoto11 from "../assets/images/bandana.jpg";
-import dogPhoto12 from "../assets/images/stick-boi.jpg";
+import dogPhoto1 from "../assets/images/dogs/beauceron.jpg";
+import dogPhoto2 from "../assets/images/dogs/bull-terrier.jpg";
+import dogPhoto3 from "../assets/images/dogs/collie.jpg";
+import dogPhoto4 from "../assets/images/dogs/dachshund.jpg";
+import dogPhoto5 from "../assets/images/dogs/golden.jpg";
+import dogPhoto6 from "../assets/images/dogs/husky.jpg";
+import dogPhoto7 from "../assets/images/dogs/mutt.jpg";
+import dogPhoto8 from "../assets/images/dogs/pom.jpg";
+import dogPhoto9 from "../assets/images/dogs/shiba.jpg";
+import dogPhoto10 from "../assets/images/dogs/shiba-hat.jpg";
+import dogPhoto11 from "../assets/images/dogs/bandana.jpg";
+import dogPhoto12 from "../assets/images/dogs/stick-boi.jpg";
 
 export const dogData: Dog[] = [
 	{ id: 1, photo: dogPhoto1 },
