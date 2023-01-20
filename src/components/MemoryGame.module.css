@@ -1,7 +1,7 @@
 .wrapper {
 	/* background-color: aliceblue; */
 	display: grid;
-	grid-gap: 50px;
+	grid-gap: 30px;
 	grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 	border-radius: 15px;
 }
@@ -30,10 +30,16 @@
 	width: 170px;
 	height: 240px;
 }
-/* button:hover {
-	border-color: #646cff;
+
+@media screen and (max-width: 600px) {
+	.wrapper {
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	}
+	.cardImgWrap img {
+		border-radius: 15px;
+		background-size: contain;
+		width: 100px;
+		height: 140px;
+	}
 }
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
-} */
