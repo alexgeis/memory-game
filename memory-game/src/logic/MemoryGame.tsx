@@ -1,4 +1,3 @@
-import { MouseEventHandler, useState } from "react";
 import styles from "./MemoryGame.module.css";
 
 function MemoryGame({ dogs, onClick }: memGameProps) {
