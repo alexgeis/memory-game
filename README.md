@@ -232,6 +232,7 @@ Project Link: [https://github.com/alexgeis/memory-game](https://github.com/alexg
 Helpful resources and kudos.
 
 - [Netlify](https://www.netlify.com/)
+- [Shout out to Manny for solving the labyrinth that is Vite + TypeScript + Jest](https://codingwithmanny.medium.com/quick-jest-setup-with-vitejs-react-typescript-82f325e4323f)
 <!-- - [Choose an Open Source License](https://choosealicense.com)
 - [Img Shields](https://shields.io)
 - [GitHub Pages](https://pages.github.com)

@@ -19,15 +19,21 @@
 		]
 	},
 	"jest": {
+		"testEnvironment": "jsdom",
 		"verbose": true,
 		"transform": {
 			"^.+\\.tsx?$": "ts-jest"
+		},
+		"moduleNameMapper": {
+			"\\.(gif|ttf|eot|svg|png)$": "<rootDir>/test/__mocks__/fileMock.js",
+			"\\.(css|less|sass|scss)$": "identity-obj-proxy"
 		}
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^14.4.3",
+		"jest-environment-jsdom": "^29.3.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
@@ -36,6 +42,7 @@
 		"@types/react": "^18.0.26",
 		"@types/react-dom": "^18.0.9",
 		"@vitejs/plugin-react": "^3.0.0",
+		"identity-obj-proxy": "^3.0.0",
 		"jest": "^29.3.1",
 		"ts-jest": "^29.0.5",
 		"ts-node": "^10.9.1",
