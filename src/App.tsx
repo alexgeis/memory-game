@@ -14,73 +14,71 @@ import "./App.css";
 // 	}).then(() => promise);
 // }
 
-// function App({ dogData }: any) {
-// 	const [score, setScore] = useState<number>(0);
-// 	const [highScore, setHighScore] = useState<any>(
-// 		localStorage.getItem("highScore") || 0
-// 	);
+function App({ dogData }: any) {
+	const [score, setScore] = useState<number>(0);
+	const [highScore, setHighScore] = useState<any>(
+		localStorage.getItem("highScore") || 0
+	);
 
-// 	if (score > highScore) {
-// 		setHighScore(score);
-// 		localStorage.setItem("highScore", highScore);
-// 	}
+	if (score > highScore) {
+		setHighScore(score);
+		localStorage.setItem("highScore", highScore);
+	}
 
-// 	// using the Fisher-Yates shuffle algo
-// 	const shuffle = (array: Dog[]): Dog[] => {
-// 		for (let i = array.length - 1; i > 0; i--) {
-// 			const j: number = Math.floor(Math.random() * (i + 1));
-// 			const temp: Dog = array[i];
-// 			array[i] = array[j];
-// 			array[j] = temp;
-// 		}
-// 		return array;
-// 	};
-// 	const shuffledDogs: Dog[] = shuffle(dogData);
+	// using the Fisher-Yates shuffle algo
+	const shuffle = (array: Dog[]): Dog[] => {
+		for (let i = array.length - 1; i > 0; i--) {
+			const j: number = Math.floor(Math.random() * (i + 1));
+			const temp: Dog = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+		return array;
+	};
+	const shuffledDogs: Dog[] = shuffle(dogData);
 
-// 	const [dogs, setDogs] = useState<Dog[]>(shuffledDogs);
-// 	const [clickedDogIds, setClickedDogIds] = useState<number[]>([]);
+	const [dogs, setDogs] = useState<Dog[]>(shuffledDogs);
+	const [clickedDogIds, setClickedDogIds] = useState<number[]>([]);
 
-// 	// event "React.MouseEvent<HTMLElement>" is throwing an error for unknown property dataset
-// 	const clickHandler = (e: any): void => {
-// 		const id: number = +e.target.dataset.id;
-// 		if (clickedDogIds.includes(id)) {
-// 			endGame();
-// 			return;
-// 		}
-// 		setClickedDogIds([...clickedDogIds, id]);
-// 		setScore((score: number): number => score + 1);
-// 		setDogs(shuffle(dogs));
-// 	};
+	// event "React.MouseEvent<HTMLElement>" is throwing an error for unknown property dataset
+	const clickHandler = (e: any): void => {
+		const id: number = +e.target.dataset.id;
+		if (clickedDogIds.includes(id)) {
+			endGame();
+			return;
+		}
+		setClickedDogIds([...clickedDogIds, id]);
+		setScore((score: number): number => score + 1);
+		setDogs(shuffle(dogs));
+	};
 
-// 	const endGame = (): void => {
-// 		const el: HTMLElement = document.querySelector("#gameStatus")!;
-// 		el.style.display = "block";
+	const endGame = (): void => {
+		const el: HTMLElement = document.querySelector("#gameStatus")!;
+		el.style.display = "block";
 
-// 		setTimeout(() => {
-// 			el.style.display = "none";
-// 		}, 2000);
+		setTimeout(() => {
+			el.style.display = "none";
+		}, 2000);
 
-// 		setScore(0);
-// 	};
+		setScore(0);
+	};
 
-// 	return (
-// 		<div className="App">
-// 			<Header
-// 				score={score}
-// 				highScore={highScore}
-// 			/>
-// 			<Suspense fallback={<Loading />}>
-// 				<MemoryGame
-// 					dogs={dogs}
-// 					onClick={clickHandler}
-// 				/>
-// 			</Suspense>
-// 			<div className="spacer"></div>
-// 			<Footer />
-// 		</div>
-// 	);
-// }
-
-const App = () => <h1>Our First Test</h1>;
+	return (
+		<div className="App">
+			<Header
+				score={score}
+				highScore={highScore}
+			/>
+			<Suspense fallback={<Loading />}>
+				<MemoryGame
+					dogs={dogs}
+					onClick={clickHandler}
+				/>
+			</Suspense>
+			<div className="spacer"></div>
+			<Footer />
+		</div>
+	);
+}
 
 export default App;
