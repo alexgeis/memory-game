@@ -23,11 +23,30 @@
 .scoreCurr,
 .scoreHigh {
 	/* display: none; */
+	padding: 0.2rem;
+	margin: 0;
 	font-size: 1.5rem;
 	color: blue;
 }
+
 .gameStatus {
 	display: none;
 	color: red;
 	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+	.title {
+		font-size: 1.5rem;
+	}
+
+	.description {
+		font-size: 1.2rem;
+	}
+	.scoreCurr,
+	.scoreHigh {
+		/* display: none; */
+		font-size: 1.5rem;
+		color: blue;
+	}
 }
