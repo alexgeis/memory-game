@@ -1,7 +1,10 @@
 import { useState, Suspense, lazy } from "react";
 
 import Header from "./components/Header";
-const MemoryGame = lazy(() => import("./logic/MemoryGame"));
+const MemoryGame = lazy(() => import("./components/MemoryGame"));
+import Footer from "./components/Footer";
+import Loading from "./components/Loading";
+import "./App.css";
 
 // manually delay for demo
 // const MemoryGame = lazy(() => delayForDemo(import("./logic/MemoryGame")));
@@ -10,10 +13,6 @@ const MemoryGame = lazy(() => import("./logic/MemoryGame"));
 // 		setTimeout(resolve, 2000);
 // 	}).then(() => promise);
 // }
-
-import Footer from "./components/Footer";
-import Loading from "./components/Loading";
-import "./App.css";
 
 function App({ dogData }: any) {
 	const [score, setScore] = useState<number>(0);
@@ -49,7 +48,7 @@ function App({ dogData }: any) {
 			return;
 		}
 		setClickedDogIds([...clickedDogIds, id]);
-		setScore((score) => score + 1);
+		setScore((score: number): number => score + 1);
 		setDogs(shuffle(dogs));
 	};
 
