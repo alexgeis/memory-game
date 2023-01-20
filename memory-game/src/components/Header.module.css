@@ -1,8 +1,8 @@
 .wrapper {
-	background-color: gray;
-	color: white;
+	background-color: #e5c3d1;
+	color: black;
 	border-radius: 15px;
-	padding: 1rem 2rem;
+	padding: 1rem;
 	margin: 30px auto;
 	text-align: center;
 	max-width: 600px;
@@ -13,9 +13,20 @@
 }
 
 .description {
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
+.scoreWrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.scoreCurr,
+.scoreHigh {
+	/* display: none; */
+	color: blue;
+}
 .gameStatus {
 	display: none;
+	color: red;
+	font-size: 1.5rem;
 }

@@ -1,0 +1,29 @@
+.wrapper {
+	/* background-color: aqua; */
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 3rem;
+}
+
+.loadingIcon {
+	height: 5em;
+	padding: 1.5em;
+}
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.loadingIcon {
+		animation: logo-spin infinite 3s linear;
+	}
+}
